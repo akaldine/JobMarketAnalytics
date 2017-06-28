@@ -1,0 +1,20 @@
+{
+  "name": "gent-ang-cli",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flot-spline": "^0.8.2",
+    "flot.tooltip": "^0.9.0",
+    "Flot": "flot#^0.8.3",
+    "plotlyjs": "plotly#^1.18.1"
+  }
+}

@@ -1,0 +1,30 @@
+<h4>Jobs per Category</h4>
+<div class="row">
+    <div class="col-md-4">
+        Add
+        <app-dropdown (selectedUpdated)="addGraph($event)"></app-dropdown>
+    </div>
+    <div class="col-md-4">
+        New
+        <app-dropdown  (selectedUpdated)="changeGraph($event)"></app-dropdown>
+    </div>
+    <div class="col-md-4">
+        <div class="btn-group">
+            <button type="button" 
+                    class="btn btn-primary" 
+                    (click)="toggleNormalization()" 
+                    btnCheckbox btnCheckboxTrue="1" 
+                    btnCheckboxFalse="0"
+                    [style.backgroundColor]="isNormalized == '1'? 'red' : ''">                    
+             {{isNormalized == "1" ? "DeNormalize" : "Normalize"}}
+        </button>
+
+        </div>
+    </div>
+
+
+
+</div>
+<div class="row">
+    <div id="tester" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+</div>

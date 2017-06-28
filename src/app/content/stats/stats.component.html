@@ -1,0 +1,15 @@
+<app-dropdown  (selectedUpdated)="categoryChanged($event)"></app-dropdown>
+<div *ngFor="let stat of stats"  class="col-md-12 col-sm-12 col-xs-6">
+  <div>
+    <p>{{stat.title}} ({{stat.value}})</p>    
+    <div class="">
+      <div class="progress progress_sm" style="width: 76%;">
+        <div class="progress-bar bg-green" role="progressbar" [attr.aria-valuenow]="stat.percent" 
+             data-transitiongoal="80" 
+             [style.width.%]="stat.percent" style="font-size:70%;">
+                <h4 class="progress-label">{{stat.percent}} %</h4>
+             </div>
+      </div>
+    </div>
+  </div>
+  <div>

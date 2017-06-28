@@ -1,0 +1,10 @@
+<span class="count_top"><ng-content></ng-content>{{counterData.title}}</span>
+<div class="count">{{counterData.afterNumber}}</div>
+<span class="count_bottom">
+      <i [class]="counterData.direction ? 'green' : 'red'">
+          <i [class]="counterData.direction  ? 'fa fa-sort-asc' : 'fa fa-sort-desc'"></i>
+          {{counterData.percentage*100}}% 
+      </i> 
+      <p><strong>Before:</strong> {{counterData.beforePeriod}} ({{counterData.beforeNumber}})</p>
+      <p><strong>After:</strong> {{counterData.afterPeriod}} </p>
+</span>
