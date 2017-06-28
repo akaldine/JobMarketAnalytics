@@ -31,14 +31,7 @@ import { TableComponent } from './content/Table/table.component';
 
 // Application wide providers
 
-export const firebaseConfig = {
-  apiKey: 'AIzaSyDpEHguCImN-Ejohywaq9h7jPm0OEt5kag',
-  authDomain: 'gentangcli.firebaseapp.com',
-  databaseURL: 'https://gentangcli.firebaseio.com',
-  projectId: 'gentangcli',
-  storageBucket: 'gentangcli.appspot.com',
-  messagingSenderId: '893984283765'
-}
+
 
 @NgModule({
   declarations: [
